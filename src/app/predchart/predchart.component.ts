@@ -29,11 +29,11 @@ export class PredchartComponent implements OnInit {
       console.log(res.date);
   this.outputChartOptions = {
     title:{
-      text:"Confirmed cases "
+      text:"Deaths Cases "
     },
     yAxis: {
         title: {
-          text: "Cases number"
+          text: "Deaths number"
         }
       }
     ,xAxis: {
