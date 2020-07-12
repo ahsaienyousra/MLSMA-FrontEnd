@@ -1,0 +1,17 @@
+
+    <h4 class="text-center">Covid 19 cases number per country</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Select country name</mat-label>
+  <mat-select #select (selectionChange) = "getname(select.value)" placeholder="Select your option">
+    <mat-option *ngFor="let dl of listCountry" [value]="dl">
+        {{dl}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<div>
+            <mat-card class="tp-card">
+             
+            <highcharts-chart [Highcharts]="Highcharts" [options]="outputChartOptions" style="width: 100%; height: 600px; display: block;">
+            </highcharts-chart>
+        </mat-card>
+    </div>

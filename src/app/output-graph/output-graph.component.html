@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row" >
+        <div>
+            <mat-card class="tp-card">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="piechartsOption" style="width: 100%; height: 600px; display: block;">
+            </highcharts-chart>
+        </mat-card>
+        </div>
+        <div>
+            <mat-card class="tp-card">
+                <highcharts-chart [Highcharts]="Highcharts" [options]="outputChartOptions"style="width: 100%; height: 600px; display: block;">
+                </highcharts-chart>
+            </mat-card>
+        </div>
+        <div>
+            <mat-card class="tp-card">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="deathschartsOption" style="width: 100%; height: 600px; display: block;">
+            </highcharts-chart>
+        </mat-card>
+        </div>
+    </div>
+</div>
