@@ -29,9 +29,6 @@ export class CountrychartComponent implements OnInit {
     } 
   })
   }
-    
- 
-
   ngOnInit(): void {
   }
 
